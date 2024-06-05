@@ -54,6 +54,7 @@ body{
 }
 
 .show-btn{
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -64,9 +65,13 @@ body{
   padding: 10px 25px; 
 }
 
+.body-reset{
+  background-color: white;
+}
+
 .show-btn h2{
   font-size: 50px;
-  color: #c40094;
+  color: rgba(0, 0, 255, 0.322);
 }
 
 .show-btn .input{
@@ -107,10 +112,7 @@ body{
   color: #c40094;
 }
 
-.button:nth-child(1){
-  background: transparent;
-  color: #c40094;
-}
+
 
 
 
