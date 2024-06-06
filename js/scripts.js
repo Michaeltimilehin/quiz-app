@@ -37,6 +37,14 @@ $(document).ready (function (){
     $(".mopsy").show()
   })
 
+  $(".click5").click(function (){
+    $(".gipsy").hide()
+    $(".tipsy").hide()
+    $(".flopsy").hide()
+    $(".mopsy").hide()
+    $(".result-box").show()
+  })
+
 
 
 
