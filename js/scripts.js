@@ -14,16 +14,31 @@ $(document).ready (function (){
     $(".show-btn").hide()
     $(".back").hide()
   })
-  $(".next-btn").click(function (){
+  $(".click1").click(function (){
     $(".quiz-cont").hide()
     $(".tipsy").show()
   })
 
-  $(".click").click(function (){
-    $(".quiz-cont").hide()
+  $(".click2").click(function (){
     $(".tipsy").hide()
     $(".gipsy").show()
   })
+
+  $(".click3").click(function (){
+    $(".gipsy").hide()
+    $(".tipsy").hide()
+    $(".flopsy").show()
+  })
+
+  $(".click4").click(function (){
+    $(".gipsy").hide()
+    $(".tipsy").hide()
+    $(".flopsy").hide()
+    $(".mopsy").show()
+  })
+
+
+
 
   $(".opta").click(function (){
     let ans = $(this).find("span").text()
@@ -31,9 +46,11 @@ $(document).ready (function (){
 
     if (ans === "b" ){
       $("#count").text(add())
-      $(".opta").eq(number).addClass("pick")
+      $(".opta").eq(number).addClass("pickc")
     }else{
-      $(".opta").eq(number).addClass("pick")
+      $(".opta").eq(0).addClass("pickc")
+
+      $(".opta").eq(number).addClass("pickr")
     }
    
     $(".opta").prop("disabled" ,true);

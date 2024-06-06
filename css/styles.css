@@ -151,7 +151,7 @@
 }
 
 .quiz-box{
-  padding-bottom: 5px;
+  padding-top: 30px;
   margin: auto;
   position: relative;
   width: 500px;
@@ -191,15 +191,22 @@
   padding: 7px;
 }
 
+.pickc{
+
+  border:2px solid #00a63d !important;
+}
+.pickr{
+
+  border:2px solid red !important;
+}
 .question{
   font-size: 24px;
 }
 
 .answer{
+  border:2px solid rgba(255,255,255, .1);
   width: 100%;
   padding: 12px;
-  background: transparent;
-  border: 2px solid rgba(255,255,255, .2);
   border-radius: 3px;
   font-size: 17px;
   margin: 15px 0;
@@ -210,10 +217,7 @@
   background-color: rgba(255,255,255, .1);
   border-color: rgba(255,255,255, .1);
 }
-.pick{
-  background-color: rgba(255,255,255, .1);
-  border-color: rgba(255,255,255, .1);
-}
+
 
 .quiz-end{
   display: flex;
@@ -247,7 +251,12 @@
   border-color: slateblue;
 }
 
-
+.result-box{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
 
 
 
