@@ -5,15 +5,12 @@
   box-sizing: border-box;
 }
 
-body{
+.back{
   background-image: url(../img/pexels-incrediblerafa-4737484.jpg);
   background-repeat: no-repeat;
 }
 
-.container{
-  display: flex;
-  height: 100vh;
-}
+
 
 .back{
   height: 100vh;
@@ -66,6 +63,7 @@ body{
   transform: translate(-50%,-50%);
   width: 500px;
   background: #fff;
+  z-index: 1000;
   border-radius: 2px;
   padding: 10px 25px; 
 }
@@ -136,10 +134,13 @@ body{
 }
 
 .quiz-cont{
+  padding-top: 60px;
+  display: none;
   position: relative;
-  left: -50%;
+  left: 0;
+  height: 650px;
   width: 100%;
-  background-color: seagreen;
+  background: #09001d;
   transition: .8s,ease-in-out;
   transition-delay: .25s;
   z-index: 100;
@@ -149,17 +150,100 @@ body{
    left: 0;
 }
 
+.quiz-box{
+  margin: auto;
+  position: relative;
+  width: 500px;
+  background: transparent;
+  border: 2px solid slateblue;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 30px ;
+  color: white;
+}
+
+.quiz-box h1{
+  font-size: 32px;
+  text-align: center;
+  background: linear-gradient(45deg, transparent, slateblue,transparent);
+  border-radius: 6px;
+}
+
+.quiz-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 2px solid slateblue;
+  margin-bottom: 20px;
+}
+
+.quiz-head span{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.score{
+  background: slateblue;
+  border-radius: 3px;
+  padding: 7px;
+}
+
+.question{
+  font-size: 24px;
+}
+
+.answer{
+  width: 100%;
+  padding: 12px;
+  background: transparent;
+  border: 2px solid rgba(255,255,255, .2);
+  border-radius: 3px;
+  font-size: 17px;
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+.answer:hover{
+  background: rgba(255,255,255, .1);
+  border-color: rgba(255,255,255, .1);
+}
+
+.quiz-end{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid slateblue;
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.total{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.next-btn{
+  width: 100px;
+  height: 45px;
+  background: rgba(255,255,255, .1);
+  border: 2px solid rgba(255,255,255, .1);
+  outline: none;
+  border-radius: 6px;
+  font-size: 16px;
+  color: rgba(255,255,255, .3);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.next-btn:hover{
+  background: slateblue;
+  border-color: slateblue;
+}
 
 
 
 
 
 
-/* .app{
-  background: #fff;
-  width: 90%;
-  max-width: 600px;
-  margin: 100px auto 0 ;
-  border-radius: 10px;
-  padding: 30px;
-} */
