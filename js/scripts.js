@@ -1,5 +1,8 @@
+ function currentScore(){
+  return parseInt($("#count").text())
+ }
  function add(){
-  return parseInt($("#count").text()) + 1
+  return currentScore() + 1
 }
 
 $(document).ready (function (){
@@ -10,12 +13,13 @@ $(document).ready (function (){
     $(".show-btn").hide( )
   })
   $(".button2").click(function (){
-    $(".quiz-cont").show()
+    $(".ques1").show()
     $(".show-btn").hide()
     $(".back").hide()
+    $(".score").show()
   })
   $(".click1").click(function (){
-    $(".quiz-cont").hide()
+    $(".ques1").hide()
     $(".tipsy").show()
   })
 
@@ -43,6 +47,7 @@ $(document).ready (function (){
     $(".flopsy").hide()
     $(".mopsy").hide()
     $(".result-box").show()
+    $(".result").text(currentScore())
   })
 
 
@@ -52,11 +57,11 @@ $(document).ready (function (){
     let ans = $(this).find("span").text()
     let number = $(".opta").index(this)
 
-    if (ans === "Hyper Text Markup Language" ){
+    if (ans === "A. Hyper Text Markup Language" ){
       $("#count").text(add())
       $(".opta").eq(number).addClass("pickc")
     }else{
-      $(".opta").eq(2).addClass("pickc")
+      $(".opta").eq(0).addClass("pickc")
 
       $(".opta").eq(number).addClass("pickr")
     }
@@ -72,7 +77,7 @@ $(document).ready (function (){
     let ans = $(this).find("span").text()
     let number = $(".opta1").index(this)
 
-    if (ans === "Excellent Multiple Language" ){
+    if (ans === "A. Excellent Multiple Language" ){
       $("#count").text(add())
       $(".opta1").eq(number).addClass("pickc")
     }else{
@@ -89,11 +94,12 @@ $(document).ready (function (){
     let ans = $(this).find("span").text()
     let number = $(".opta2").index(this)
 
-    if (ans === "Bola Ahmed Tinubu" ){
+    if (ans === "C. Bola Ahmed Tinubu" ){
       $("#count").text(add())
       $(".opta2").eq(number).addClass("pickc")
+
     }else{
-      $(".opta2").eq(0).addClass("pickc")
+      $(".opta2").eq(2).addClass("pickc")
 
       $(".opta2").eq(number).addClass("pickr")
     }
@@ -105,12 +111,15 @@ $(document).ready (function (){
   $(".opta3").click(function (){
     let ans = $(this).find("span").text()
     let number = $(".opta3").index(this)
+    console.log(ans)
 
-    if (ans === "Mississippi" ){
+    if (ans === "C. Mississippi" ){
       $("#count").text(add())
       $(".opta3").eq(number).addClass("pickc")
+      $(".opta3").prop("disabled" ,true);
+
     }else{
-      $(".opta3").eq(0).addClass("pickc")
+      $(".opta3").eq(2).addClass("pickc")
 
       $(".opta3").eq(number).addClass("pickr")
     }
@@ -123,11 +132,11 @@ $(document).ready (function (){
     let ans = $(this).find("span").text()
     let number = $(".opta4").index(this)
 
-    if (ans === "Tripod" ){
+    if (ans === "C. Tripod" ){
       $("#count").text(add())
       $(".opta4").eq(number).addClass("pickc")
     }else{
-      $(".opta4").eq(0).addClass("pickc")
+      $(".opta4").eq(2).addClass("pickc")
 
       $(".opta4").eq(number).addClass("pickr")
     }

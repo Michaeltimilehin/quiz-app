@@ -186,8 +186,16 @@
 }
 
 .score{
-  background: slateblue;
+  display: none;
+  background: #09001d;
+  width: 100%;
   border-radius: 3px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+
+  height: 50px;
   padding: 7px;
 }
 
@@ -210,7 +218,8 @@
   border-radius: 3px;
   font-size: 17px;
   margin: 15px 0;
-  cursor: pointer;
+  background-color: #09001d ;
+  color: white;
 }
 
 .answer:hover{
@@ -264,8 +273,11 @@
   padding: 10px 25px; 
 }
 
-.tons{
+.tons button{
   width: 130px;
   height: 47px;
-  background: slateblue;
+  background-color: white;
+  border: 2px solid slateblue;
+  outline: none;
+  border-radius: 6px;
 }
