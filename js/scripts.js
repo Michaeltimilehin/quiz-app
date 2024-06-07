@@ -52,11 +52,11 @@ $(document).ready (function (){
     let ans = $(this).find("span").text()
     let number = $(".opta").index(this)
 
-    if (ans === "b" ){
+    if (ans === "Hyper Text Markup Language" ){
       $("#count").text(add())
       $(".opta").eq(number).addClass("pickc")
     }else{
-      $(".opta").eq(0).addClass("pickc")
+      $(".opta").eq(2).addClass("pickc")
 
       $(".opta").eq(number).addClass("pickr")
     }
@@ -64,5 +64,75 @@ $(document).ready (function (){
     $(".opta").prop("disabled" ,true);
   })
 
+
+
+
+
+  $(".opta1").click(function (){
+    let ans = $(this).find("span").text()
+    let number = $(".opta1").index(this)
+
+    if (ans === "Excellent Multiple Language" ){
+      $("#count").text(add())
+      $(".opta1").eq(number).addClass("pickc")
+    }else{
+      $(".opta1").eq(0).addClass("pickc")
+
+      $(".opta1").eq(number).addClass("pickr")
+    }
+   
+    $(".opta1").prop("disabled" ,true);
+  })
+
+
+  $(".opta2").click(function (){
+    let ans = $(this).find("span").text()
+    let number = $(".opta2").index(this)
+
+    if (ans === "Bola Ahmed Tinubu" ){
+      $("#count").text(add())
+      $(".opta2").eq(number).addClass("pickc")
+    }else{
+      $(".opta2").eq(0).addClass("pickc")
+
+      $(".opta2").eq(number).addClass("pickr")
+    }
+   
+    $(".opta2").prop("disabled" ,true);
+  })
+  
+   
+  $(".opta3").click(function (){
+    let ans = $(this).find("span").text()
+    let number = $(".opta3").index(this)
+
+    if (ans === "Mississippi" ){
+      $("#count").text(add())
+      $(".opta3").eq(number).addClass("pickc")
+    }else{
+      $(".opta3").eq(0).addClass("pickc")
+
+      $(".opta3").eq(number).addClass("pickr")
+    }
+   
+    $(".opta3").prop("disabled" ,true);
+  })
+
+
+  $(".opta4 ").click(function (){
+    let ans = $(this).find("span").text()
+    let number = $(".opta4").index(this)
+
+    if (ans === "Tripod" ){
+      $("#count").text(add())
+      $(".opta4").eq(number).addClass("pickc")
+    }else{
+      $(".opta4").eq(0).addClass("pickc")
+
+      $(".opta4").eq(number).addClass("pickr")
+    }
+   
+    $(".opta4").prop("disabled" ,true);
+  })
 
 }) 
